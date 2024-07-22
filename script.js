@@ -9,6 +9,7 @@ const habilidadeBtn = document.querySelectorAll('.habilidades__infos__itens__lis
 const habilidadeDescricaoLista = document.querySelectorAll('.habilidade__descricao');
 const textoMeAjuda = document.querySelector(".me-ajuda-texto");
 const imagemHabilidade = document.querySelector(".imagem_habilidade");
+const cliqueEmUmSkill = document.querySelector('.clique_em_uma_desc');
 
 loopImagens = null;
 let numeroDaImagemLoop = 1;
@@ -124,6 +125,7 @@ levantamentoCnt.addEventListener('click', () => {
 habilidadeBtn.forEach(habilidade_atual => {
     habilidade_atual.addEventListener('mouseover', selecionaHabilidade)
     function selecionaHabilidade() {
+        cliqueEmUmSkill.style.display = "none"
         habilidadeBtn.forEach(atual => {
             atual.classList.remove("active")
         })

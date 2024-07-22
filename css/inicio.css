@@ -1,0 +1,143 @@
+.inicio{
+    height: 92vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.inicio__imagem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio__imagem-imagem{
+    width: 80%;
+}
+
+.inicio__infos{
+    margin: 0 auto;
+}
+
+.inicio__infos-textos{
+    width: 40vw;
+}
+
+.inicio__infos-textos-titulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 8vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.inicio__infos-textos-texto{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.8vw;
+    text-align: end;
+}
+
+.inicio__infos-botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.inicio__infos-botoes-botao{
+    width: 12vw;
+    margin: 1.5vw 1vw 0 0;
+    padding: 0.7vw 1vw;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    text-decoration: none;
+    background-color: var(--cor-destaque);
+    align-items: center;
+    transition: 1s
+}
+
+.inicio__infos-botoes-botao:hover{
+    width: 20vw;
+    transition: 0.6s;
+}
+
+.inicio__infos-botoes-botaoimg{
+    filter: invert();
+    width: 2vw;
+}
+
+.inicio__infos-botoes-botaotxt{
+    color: var(--cor-texto);
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 431px) {
+    .inicio{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .inicio__infos{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+    .inicio__infos-textos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inicio__infos-botoes{
+        align-items: center;
+    }
+
+    .inicio__infos-textos-titulo{
+        font-size: 56px;
+    }
+
+    .inicio__infos-textos-texto{
+        font-size: 18px;
+        margin-top: .5em;
+    }
+
+    .inicio__infos-botoes{
+        display: flex;
+        height: 40px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
+        margin-top: 1em;
+    }
+
+    .inicio__infos-botoes-botao{
+        width: 45%;
+        height: 100%;
+    }
+
+    .inicio__infos-botoes-botaotxt{
+        font-size: 3.3vw;
+    }
+
+    .inicio__infos-botoes-botaoimg{
+        width: 15%;
+    }
+
+    .inicio__imagem-imagem{
+        margin-bottom: 2em;
+    }
+}

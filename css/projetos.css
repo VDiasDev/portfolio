@@ -1,0 +1,286 @@
+.projetos{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+}
+
+.projetos-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.projetos-titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 4vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.projetos__profissionais-titulo,
+.projetos__pessoais-titulo{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 8vh;
+    margin-bottom: 3vh;
+    margin-left: 4vw;
+}
+
+.projetos__profissionais-lista,
+.projetos__pessoais-lista{
+    display: flex;
+    justify-content: space-around;
+}
+
+.projetos__profissionais-lista__item,
+.projetos__pessoais-lista__item{
+    width: 20vw;
+    height: 10.9vw;
+}
+
+.projetos-lista__item-link{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.6s;
+}
+
+.projetos-lista__item-link:hover{
+    width: 110%;
+    height: 110%;
+    transition: 0.3s;
+}
+
+.projetos-lista__item-link.nobody{
+    background-image: url(../img/nobody-image.jpg);
+    background-size: 100%;
+}
+
+.projetos-lista__item-link.tarefas{
+    background-image: url(../img/tarefas_site.png);
+    background-size: 100%;
+}
+
+.projetos-lista__item-link.quadrinhos{
+    background-image: url(../img/quadrinhos_print.png);
+    background-size: 100%;
+}
+
+.projetos-lista__item-link.emBreve{
+    background-color: var(--cor-destaque);
+    background-image: url(../img/ampulheta.png);
+    background-repeat: no-repeat;
+    background-size: 47%;
+    background-position-x: 50%;
+    background-position-y: 150% ;
+}
+
+.projetos__profissionais-lista__item-titulo,
+.projetos__pessoais-lista__item-titulo{
+    font-family: var(--fonte-secundaria);
+    height: 1.7vw;
+    padding: 0.6vw;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.5);
+    width: 99%;
+}
+
+
+.projetos-imagem{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+}
+
+.projetos-imagem-imagem{
+    width: 100%;
+}
+
+.me-ajuda-texto{
+    font-family: var(--fonte-primaria);
+    margin-bottom: 15%;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); /* Cor de fundo com opacidade */
+}
+
+.modal-content {
+    background-color: var(--cor-outro-fundo);
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    height: 68%;
+
+    display: flex;
+    justify-content: right;
+
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.modal-content-container{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.modal__titulo-texto{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.modal__titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 32px;
+    margin: 0 0 5% 0;
+    font-weight: 600;
+    
+}
+
+.modal__texto{
+    font-family: var(--fonte-secundaria);
+    width: 90%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.modal_botao{
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    padding: 0.8vw 1vw;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    margin: auto;
+    transition: 0.6s;
+    font-size: 1.2vw;
+}
+
+.modal_botao:hover{
+    font-size: 1.5vw;
+    transition: 0.3s;
+}
+
+.fecha {
+    color: #aaa;
+    font-size: 28px;
+    font-weight:bold;
+}
+
+.fecha:hover,
+.fecha:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 431px) {
+    .projetos{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projetos-container{
+        height: auto;
+    }
+
+    .projetos-titulo{
+        font-size: 42px;
+    }
+
+    .projetos__profissionais-titulo,
+    .projetos__pessoais-titulo{
+        font-size: 18px;
+        margin-top: 1.4em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    
+    .projetos__profissionais-lista,
+    .projetos__pessoais-lista{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .projetos__profissionais-lista__item,
+    .projetos__pessoais-lista__item{
+        width: 80%;
+        height: 95px;
+    }
+
+    .projetos__profissionais-lista__item-titulo,
+    .projetos__pessoais-lista__item-titulo{
+        height: 4vw;
+        padding: 0.6vw;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .projetos-lista__item-link.emBreve{
+        background-size: 47%;
+        background-position-x: center;
+        background-position-y: center;
+    }
+
+    .modal-content {
+        margin: 5% auto;
+        padding: 20px;
+        width: 70%;
+        height: 85%;
+        display: flex;
+        background-size: 100%;
+        background-position-y: bottom;
+    }
+
+    .modal-content-container{
+        width: 100%;
+    }
+
+    .modal__texto{
+        font-size: 16px;
+    }
+
+    .modal_botao{
+        margin: 2em auto;
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+}

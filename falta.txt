@@ -1,0 +1,17 @@
+FALTA FAZER:
+
+1 - Escrever o Sobre mim
+    1.1 - olhar referencias de sobre mim de outras pessoas
+    1.2 - escrever meu próprio
+3 - Criar os 10 frames da animação levantando a caixa
+4 - Criar 7 artes para as habilidades
+    4.1 - arte dizendo pra clicar
+    4.2 - arte com o HTML
+    4.3 - arte com o CSS
+    4.4 - arte com o JS
+    4.5 - arte com o GML
+    4.6 - arte com o GitHUb
+    4.7 - arte com o Desenhos
+5 - verficiar se falta algo nos designs.
+    5.1 - me certificar que quero essa paleta
+    5.2 - me certificar que quero essa fonte

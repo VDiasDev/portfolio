@@ -1,0 +1,47 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(inicio.css);
+@import url(sobremim.css);
+@import url(projetos.css);
+@import url(habilidades.css);
+@import url(rodape.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+
+  .lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+}
+*/
+:root {
+    --cor-fundo:white;
+    --cor-outro-fundo: rgb(216, 247, 255);
+    --cor-destaque: rgb(39, 152, 228);
+    --cor-texto: white;
+    --cor-texto-secundario: black;
+    
+    --fonte-primaria: "Poppins", sans-serif;
+    --fonte-secundaria:  "Lato", sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+

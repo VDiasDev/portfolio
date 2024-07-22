@@ -200,4 +200,8 @@
     .habilidades__informacoes{
         height: 80vh;
     }
+
+    .clique_em_uma_desc{
+        display: block;
+    }
 }

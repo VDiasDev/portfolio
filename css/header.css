@@ -49,6 +49,11 @@
         font-size: 3.5vw;
     }
 
+    .nav__item-texto:hover{
+        font-size: 3.5vw;
+        transition: 0.5s;
+    }
+
     .navegacao__lista{
         width: 100%;
         justify-content: center;

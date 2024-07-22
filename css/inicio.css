@@ -140,4 +140,9 @@
     .inicio__imagem-imagem{
         margin-bottom: 2em;
     }
+
+    .inicio__infos-botoes-botao:hover{
+        width: 12vw;
+        transition: 0.6s;
+    }
 }

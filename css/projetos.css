@@ -248,10 +248,11 @@
 
     .projetos__profissionais-lista__item-titulo,
     .projetos__pessoais-lista__item-titulo{
-        height: 4vw;
+        height: 35%;
         padding: 0.6vw;
         font-size: 14px;
         width: 100%;
+        text-align: center;
     }
 
     .projetos-lista__item-link.emBreve{
@@ -282,5 +283,11 @@
         margin: 2em auto;
         padding: 20px 40px;
         font-size: 18px;
+    }
+
+    .projetos-lista__item-link:hover{
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
     }
 }
